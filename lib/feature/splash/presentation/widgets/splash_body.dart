@@ -14,6 +14,7 @@ class SplashBody extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 51,
+                  fontWeight: FontWeight.bold,
                   color: Color(0xFFFFFFFF),
                 ),
                 children: [
