@@ -1,6 +1,6 @@
-import 'dart:ffi';
-
+import 'package:e_commerce/feature/on_boarding/presentation/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});
@@ -34,11 +34,19 @@ class _SplashBodyState extends State<SplashBody>
     // animationController?.forward();
     animationController!.repeat(reverse: true);
   }
-@override
-  void dispose() {
-animationController!.dispose();
-super.dispose();
+
+  void goToNextView() {
+    Future.delayed(Duration(seconds: 3), () {
+      Get.to(() => onBoardingView(), transition: Transition.fade);
+    });
   }
+
+  @override
+  void dispose() {
+    animationController!.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
