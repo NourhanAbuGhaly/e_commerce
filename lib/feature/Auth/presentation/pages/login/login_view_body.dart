@@ -15,10 +15,7 @@ class LoginViewBody extends StatelessWidget {
         VerticalSpace(
           value: 10,
         ),
-        SizedBox(
-          child: Image.asset(KLogo),
-          height: SizeConfig.defaultSize! * 17,
-        ),
+
         Text.rich(
           TextSpan(
               style: TextStyle(
@@ -37,9 +34,14 @@ class LoginViewBody extends StatelessWidget {
                 ),
               ]),
         ),
+         SizedBox(
+          child: Image.asset(KLogo),
+          height: SizeConfig.defaultSize! * 17,
+        ),
         Row(
           children: [
             Flexible(
+              flex: 2,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8),
                 child: CustomButtonWithIcon(
@@ -48,7 +50,9 @@ class LoginViewBody extends StatelessWidget {
                   iconData: FontAwesomeIcons.googlePlusG,
                 ),
               ),
-            ),  Flexible(
+            ),
+            Flexible(
+              flex: 1,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8),
                 child: CustomButtonWithIcon(
@@ -59,7 +63,10 @@ class LoginViewBody extends StatelessWidget {
               ),
             ),
           ],
-        )
+        ),          SizedBox(
+          child: Image.asset(KLogo),
+          height: SizeConfig.defaultSize! * 17,
+        ),
       ],
     );
   }
