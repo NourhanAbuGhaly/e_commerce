@@ -2,8 +2,8 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:e_commerce/core/constant.dart';
 import 'package:flutter/material.dart';
 
-class CustomIndiactor extends StatelessWidget {
-  const CustomIndiactor({super.key, this.dotsIndex});
+class CustomIndicator extends StatelessWidget {
+  const CustomIndicator({super.key, this.dotsIndex});
 
   final double? dotsIndex;
 

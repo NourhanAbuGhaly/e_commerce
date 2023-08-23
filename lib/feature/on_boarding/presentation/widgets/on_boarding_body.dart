@@ -39,7 +39,7 @@ class _onBoardingViewBodyState extends State<onBoardingViewBody> {
           right: 0,
           left: 0,
           bottom: SizeConfig.defaultSize! * 24,
-          child: CustomIndiactor(
+          child: CustomIndicator(
             dotsIndex: pageController!.hasClients ? pageController?.page : 0,
           ),
         ),
