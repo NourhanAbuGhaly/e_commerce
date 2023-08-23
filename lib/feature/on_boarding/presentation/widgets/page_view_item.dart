@@ -16,7 +16,10 @@ class PageViewItems extends StatelessWidget {
         VerticalSpace(
           value: 22,
         ),
-        Image.asset(image!),
+        SizedBox(
+          height: SizeConfig.defaultSize! * 17,
+          child: Image.asset(image!),
+        ),
         VerticalSpace(
           value: 5,
         ),
