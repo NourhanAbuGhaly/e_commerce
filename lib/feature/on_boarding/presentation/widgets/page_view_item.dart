@@ -14,14 +14,14 @@ class PageViewItems extends StatelessWidget {
     return Column(
       children: [
         VerticalSpace(
-          value: 22,
+          value: 18,
         ),
         SizedBox(
           height: SizeConfig.defaultSize! * 17,
           child: Image.asset(image!),
         ),
         VerticalSpace(
-          value: 5,
+          value: 2.5,
         ),
         Text(
           title!,
@@ -33,7 +33,7 @@ class PageViewItems extends StatelessWidget {
           textAlign: TextAlign.left,
         ),
         VerticalSpace(
-          value: 2.5,
+          value: 1,
         ),
         Text(
           subTitle!,
