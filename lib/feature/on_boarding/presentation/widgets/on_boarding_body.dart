@@ -1,5 +1,6 @@
 import 'package:e_commerce/core/utils/size_config.dart';
 import 'package:e_commerce/core/widget/custom_button.dart';
+import 'package:e_commerce/feature/on_boarding/presentation/widgets/custom_page_view.dart';
 import 'package:flutter/material.dart';
 
 class onBoardingViewBody extends StatelessWidget {
@@ -12,6 +13,7 @@ class onBoardingViewBody extends StatelessWidget {
     SizeConfig().init(context);
     return Stack(
       children: [
+        CustomPageView(),
         Positioned(
           top: SizeConfig.defaultSize! * 10,
           right: 32,
