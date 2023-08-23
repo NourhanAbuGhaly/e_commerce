@@ -2,11 +2,12 @@ import 'package:e_commerce/feature/on_boarding/presentation/widgets/page_view_it
 import 'package:flutter/material.dart';
 
 class CustomPageView extends StatelessWidget {
-  const CustomPageView({super.key});
-
+  const CustomPageView({super.key, this.pageController});
+final PageController? pageController;
   @override
   Widget build(BuildContext context) {
     return PageView(
+      controller: pageController,
       children: [
         PageViewItems(
           title: "E Shopping ",
