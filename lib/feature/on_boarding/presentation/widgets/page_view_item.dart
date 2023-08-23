@@ -1,3 +1,4 @@
+import 'package:e_commerce/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class PageViewItems extends StatelessWidget {
@@ -8,7 +9,9 @@ final String? image;
   @override
   Widget build(BuildContext context) {
     return Column(
+
       children: [
+        SizedBox(height: SizeConfig.defaultSize!*.22,),
         Image.asset(image!),
         Text(
           title!,
